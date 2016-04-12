@@ -12,7 +12,7 @@ server.connection({
 
 server.route({
     method: 'GET',
-    path: '/',
+    path: '/person',
     handler: function (request, reply) {
         const person = {
             email: faker.internet.email(),
@@ -29,6 +29,20 @@ server.route({
         };
         
         reply(person);
+    }
+});
+
+server.route({
+    method: 'GET',
+    path: '/company',
+    handler: function (request, reply) {
+        const company = {
+            suffixes: faker.company.suffixes(),
+            companyName: faker.company.companyName(),
+            companySuffix: faker.company.companySuffix()
+        };
+        
+        reply(company);
     }
 });
 
