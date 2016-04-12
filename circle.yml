@@ -1,0 +1,14 @@
+machine:
+  node:
+    version: 4.2.4
+general:
+  branches:
+    only:
+      - master
+      - dev
+dependencies:
+    override:
+        - npm install
+test:
+    override:
+        - npm run test

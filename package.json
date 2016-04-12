@@ -1,0 +1,24 @@
+{
+  "name": "fakerserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mBourges/fakerserver.git"
+  },
+  "author": "Matthieu B",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mBourges/fakerserver/issues"
+  },
+  "homepage": "https://github.com/mBourges/fakerserver#readme",
+  "dependencies": {
+    "faker": "^3.1.0",
+    "hapi": "^13.3.0"
+  }
+}
