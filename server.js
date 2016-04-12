@@ -1,8 +1,8 @@
 const Hapi = require('hapi');
 const faker = require('faker');
 
-const serverIP = process.env.IP;
-const serverPORT = process.env.PORT;
+const serverIP = process.env.OPENSHIFT_NODEJS_IP || process.env.IP;
+const serverPORT = process.env.OPENSHIFT_NODEJS_PORT || process.env.PORT;
 
 const server = new Hapi.Server();
 server.connection({
