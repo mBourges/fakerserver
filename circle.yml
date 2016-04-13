@@ -9,12 +9,11 @@ general:
 dependencies:
   pre:
     - sudo apt-get update; sudo apt-get install rhc
-dependencies:
-    override:
-        - npm install
+  override:
+    - npm install
 test:
-    override:
-        - npm run test
+  override:
+    - npm run test
 deployment:
   production:
     branch: master
