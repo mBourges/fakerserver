@@ -39,7 +39,8 @@ server.route({
         const company = {
             suffixes: faker.company.suffixes(),
             companyName: faker.company.companyName(),
-            companySuffix: faker.company.companySuffix()
+            companySuffix: faker.company.companySuffix(),
+            companySuffix: faker.company.catchPhrase()
         };
         
         reply(company);
