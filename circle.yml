@@ -12,3 +12,8 @@ dependencies:
 test:
     override:
         - npm run test
+deployment:
+    production:
+      branch: master
+        commands:
+          - ./deploy/setSSHKey.sh
