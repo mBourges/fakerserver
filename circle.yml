@@ -15,5 +15,5 @@ test:
 deployment:
   production:
     branch: master
-      commands:
-        - ./deploy/setSSHKey.sh
+    commands:
+      - ./deploy/setSSHKey.sh
