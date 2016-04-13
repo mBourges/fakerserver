@@ -8,7 +8,7 @@ general:
       - dev
 dependencies:
   pre:
-    - sudo apt-get update; sudo apt-get install rhc
+    - sudo apt-get update; sudo gem install rhc
   override:
     - npm install
 test:
