@@ -49,16 +49,16 @@ server.route({
 
 server.route({
     method: 'GET',
-    path: '/Commerce',
+    path: '/commerce',
     handler: function (request, reply) {
         const commerce = {
-            color: faker.company.color(),
-            department: faker.company.department(),
-            productName: faker.company.productName(),
-            price: faker.company.price(),
-            productAdjective: faker.company.productAdjective(),
-            productMaterial: faker.company.productMaterial(),
-            product: faker.company.product()
+            color: faker.commerce.color(),
+            department: faker.commerce.department(),
+            productName: faker.commerce.productName(),
+            price: faker.commerce.price(),
+            productAdjective: faker.commerce.productAdjective(),
+            productMaterial: faker.commerce.productMaterial(),
+            product: faker.commerce.product()
         };
         
         reply(commerce);

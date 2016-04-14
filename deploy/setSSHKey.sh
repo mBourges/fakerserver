@@ -11,3 +11,4 @@ git remote add upstream git@github.com:mBourges/fakerserver.git
 git fetch upstream 
 git merge upstream/master -m "Merge"
 git push
+sudo rhc sshkey remove circleci -l $OPENSHIFT_USERNAME -p $OPENSHIFT_PWD
