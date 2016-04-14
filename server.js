@@ -49,6 +49,28 @@ server.route({
 
 server.route({
     method: 'GET',
+    path: '/Commerce',
+    handler: function (request, reply) {
+        const commerce = {
+            color: faker.company.color(),
+            department: faker.company.department(),
+            productName: faker.company.productName(),
+            price: faker.company.price(),
+            productAdjective: faker.company.productAdjective(),
+            productMaterial: faker.company.productMaterial(),
+            product: faker.company.product()
+        };
+        
+        reply(commerce);
+    }
+});
+
+
+
+
+
+server.route({
+    method: 'GET',
     path: '/health',
     handler: function(request, reply) {
         reply();
